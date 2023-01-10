@@ -1,3 +1,7 @@
+# Express Javascript Starter
+
+Starter template for Express.js, Javascript, and the thirdweb SDK.
+
 ## Using This Template
 
 Create a project using this example:
