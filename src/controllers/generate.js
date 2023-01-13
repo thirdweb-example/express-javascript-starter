@@ -1,4 +1,4 @@
-import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+const { ThirdwebSDK } = require("@thirdweb-dev/sdk");
 
 const generateSignature = async (req, res) => {
   // Get the address from the request body
@@ -41,4 +41,4 @@ const generateSignature = async (req, res) => {
   }
 };
 
-export default generateSignature;
+module.exports = generateSignature;

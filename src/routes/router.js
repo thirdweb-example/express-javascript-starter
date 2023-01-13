@@ -1,8 +1,8 @@
-import express from "express";
-import generateSignature from "../controllers/generate.js";
+const express = require("express");
+const generateSignature = require("../controllers/generate");
 
 const router = express.Router();
 
 router.post("/generate", generateSignature);
 
-export default router;
+module.exports = router;
