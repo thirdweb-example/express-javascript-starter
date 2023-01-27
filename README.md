@@ -23,12 +23,16 @@ yarn # yarn
 PRIVATE_KEY=your_private_key
 ```
 
+Using private keys as an env variable is vulnerable to attacks and is not best practice. We are doing it in this guide for the sake of brevity, but we strongly recommend using a [secret manager to store your private key](https://portal.thirdweb.com/sdk/set-up-the-sdk/securing-your-private-key).
+
 - Run the project:
 
 ```bash
 npm run start # npm
 yarn start # yarn
 ```
+
+Using private keys as an env variable is vulnerable to attacks and is not best practice. We are doing it in this guide for the sake of brevity, but we strongly recommend using a [secret manager to store your private key](https://portal.thirdweb.com/sdk/set-up-the-sdk/securing-your-private-key).
 
 ## Learn More
 
