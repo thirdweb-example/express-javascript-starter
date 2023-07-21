@@ -1,48 +1,55 @@
 # Express Javascript Starter
 
-Starter template for Express.js, Javascript, and the thirdweb SDK.
+Starter kit to build with Express and thirdweb without additional initial configuration.
 
-## Using This Template
+## Installation
 
-Create a project using this example:
+Install the template with [thirdweb create](https://portal.thirdweb.com/cli/create)
 
 ```bash
-npx thirdweb create --template express-javascript-starter
+  npx thirdweb create app --express --javascript --evm
 ```
+
+## Run Locally
 
 Install dependencies:
 
 ```bash
-npm install # npm
-yarn # yarn
+  yarn
 ```
 
-- Export your wallet private key from your wallet and add it to the .env file.
-
-```env
-PRIVATE_KEY=your_private_key
-```
-
-Using private keys as an env variable is vulnerable to attacks and is not best practice. We are doing it in this guide for the sake of brevity, but we strongly recommend using a [secret manager to store your private key](https://portal.thirdweb.com/sdk/set-up-the-sdk/securing-your-private-key).
-
-- Run the project:
+Start the server:
 
 ```bash
-npm run start # npm
-yarn start # yarn
+  yarn start
 ```
 
-Using private keys as an env variable is vulnerable to attacks and is not best practice. We are doing it in this guide for the sake of brevity, but we strongly recommend using a [secret manager to store your private key](https://portal.thirdweb.com/sdk/set-up-the-sdk/securing-your-private-key).
+## Environment Variables
 
-## Learn More
+To run this project, you will need to add the following environment variables to your .env file:
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
+```bash
+WALLET_PRIVATE_KEY=paste_your_private_key_here
+THIRDWEB_SECRET_KEY=paste_your_secret_key_here
+```
 
-- [thirdweb Javascript Documentation](https://docs.thirdweb.com/sdk) - learn about our JavaScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+- Generate your `THIRDWEB_SECRET_KEY` via thirdweb's [dashboard](https://thirdweb.com/create-api-key).
 
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
+- For `WALLET_PRIVATE_KEY` export your wallet private key from your wallet.
 
-## Join our Discord!
+## Additional Resources
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+- [Documentation](https://portal.thirdweb.com)
+- [Templates](https://thirdweb.com/templates)
+- [Video Tutorials](https://youtube.com/thirdweb_)
+- [Blog](https://blog.thirdweb.com)
+
+## Contributing
+
+Contributions and [feedback](https://feedback.thirdweb.com) are always welcome!
+
+Please visit our [open source page](https://thirdweb.com/open-source) for more information.
+
+## Need help?
+
+For help, join the [discord](https://discord.gg/thirdweb) or visit our [support page](https://support.thirdweb.com).
