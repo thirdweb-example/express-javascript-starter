@@ -18,8 +18,7 @@ const generateSignature = async (req, res) => {
   try {
     // Get the nft collection using the initialized sdk
     const collection = await sdk.getContract(
-      collectionAddress,
-      "nft-collection"
+      collectionAddress
     );
 
     // Generate the signature
@@ -28,7 +27,7 @@ const generateSignature = async (req, res) => {
       metadata: {
         name: "My NFT",
         image:
-          "https://gateway.ipfscdn.io/ipfs/QmXXjx3aJCs9W9mN35Aade6etSoceqMk8ykkasbB87MaLt/0.png",
+          "ipfs://QmXXjx3aJCs9W9mN35Aade6etSoceqMk8ykkasbB87MaLt/0.png",
       },
     });
 
